@@ -1,0 +1,33 @@
+<?xml version="1.0"?>
+<!DOCTYPE package-info SYSTEM "http://www.simplemachines.org/xml/package-info">
+<package-info xmlns="http://www.simplemachines.org/xml/package-info" xmlns:smf="http://www.simplemachines.org/">
+	<name>Video bbCode</name>
+	<id>frenzie:videobbcode</id>
+	<type>modification</type>
+	<version>1.0</version>
+
+	<install for="2.0 - 2.0.99">
+		<readme type="file" parsebbc="true">readme.txt</readme>
+		<require-file name="video-bbcode.php" destination="$sourcedir" />
+		<require-file name="video.gif" destination="$imagesdir/bbc" />
+		<code type="file">add_remove_hooks.php</code>
+	</install>
+	<uninstall for="2.0 - 2.0.99">
+		<remove-file name="$sourcedir/video-bbcode.php" />
+		<remove-file name="$imagesdir/bbc/video.gif" />
+		<code type="file">add_remove_hooks.php</code>
+	</uninstall>
+
+	<install for="2.1 - 2.1.99">
+		<readme type="file" parsebbc="true">readme.txt</readme>
+		<require-file name="video-bbcode.php" destination="$sourcedir" />
+		<require-file name="video.png" destination="$imagesdir/bbc" />
+		<code type="file">add_remove_hooks.php</code>
+	</install>
+	<uninstall for="2.1 - 2.1.99">
+		<remove-file name="$sourcedir/video-bbcode.php" />
+		<remove-file name="$imagesdir/bbc/video.png" />
+		<code type="file">add_remove_hooks.php</code>
+	</uninstall>
+
+</package-info>
